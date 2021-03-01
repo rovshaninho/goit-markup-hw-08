@@ -642,6 +642,117 @@ a.clients-link:focus {
   margin-right: 30px;
 }
 
+.site-nav {
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  padding: 0 15px;
+}
+
+.page-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toggler-button {
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+}
+
+.toggler-button .nav-icon {
+  width: 40px;
+  height: 40px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container.page-header nav {
+    display: none;
+  }
+  ul.list {
+    display: none;
+  }
+  .nav-block ul.list {
+    display: block;
+  }
+  .nav-block {
+    padding: 48px 40px;
+    background-color: #fff;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    transform: translateX(-100%);
+    transition: transform 0.4s;
+    transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  .nav-block.is-open {
+    transform: translateX(0%);
+    transition: transform 0.4s;
+    transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  .nav-block .toggler-button {
+    position: absolute;
+    top: 3px;
+    right: 26px;
+  }
+  .site-nav ul li a {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1.172;
+    letter-spacing: 0.02em;
+  }
+  .site-nav ul li a.link {
+    padding: 0;
+    margin-bottom: 32px;
+  }
+  .current-link::after {
+    border: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    margin: 0 auto;
+  }
+  .toggler-button {
+    display: none;
+  }
+  .list-contacts {
+    flex-direction: column;
+    font-size: 12px;
+  }
+  .list-contacts a.link {
+    padding: 0px;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  .list-contacts {
+    flex-direction: row;
+    font-size: 14px;
+  }
+}
+
 header {
   border-bottom: 1px solid var(--border-color);
 }
