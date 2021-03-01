@@ -1,0 +1,35 @@
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  background-color: var(--hero-title-color);
+  color: var(--text-color);
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+/* animations implement */
+.page-header .list a,
+.footer .address a,
+a.clients-link,
+a.social-link,
+.our-team a.social-link,
+.portfolio button,
+.work-list a {
+  transition: color var(--cubic-variable),
+    background-color var(--cubic-variable), box-shadow var(--cubic-variable);
+}
+
+.features-title,
+.section-title,
+.work-title {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  color: var(--title-color);
+}

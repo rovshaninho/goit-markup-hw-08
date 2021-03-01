@@ -1,0 +1,46 @@
+/* == what are we doing section == */
+.about-us {
+  padding-bottom: $padding;
+}
+
+.section-title {
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+
+.about-us-list {
+  display: flex;
+  & li:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+/* === "what we do" text wrapping === */
+.what-we-doing {
+  position: relative;
+  z-index: 0;
+}
+
+.overflow-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 27px;
+  padding-bottom: 27px;
+
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.overflow-text {
+  font-weight: 700;
+  line-height: 1.142em;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}

@@ -1,0 +1,24 @@
+/* === reset list markers === */
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* === reset decoration links === */
+a {
+  display: block;
+  text-decoration: none;
+  color: var(--title-color);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* === removes margin top from address === */
+p {
+  margin: 0;
+}

@@ -1,0 +1,94 @@
+header {
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* === navigation === */
+.site-nav {
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+header > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+}
+
+/* logo design */
+.logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+
+  color: var(--accent-color);
+}
+
+.site-nav > .logo {
+  margin-right: 93px;
+}
+
+.header-studio {
+  color: var(--logo-black-color);
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-list > li:not(:last-child),
+.list-contacts > li:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav-list,
+.contacts-link {
+  letter-spacing: 0.02em;
+}
+
+.nav-link {
+  color: var(--title-color);
+}
+
+.current-link,
+.nav-link:hover,
+.nav-link:focus,
+.contacts:hover,
+.contacts:focus,
+.contacts-link:hover,
+.contacts-link:focus,
+.footer-contacts-link:hover,
+.footer-contacts-link:focus {
+  color: var(--accent-color);
+}
+.site-nav .link {
+  display: block;
+  padding: 24px 0px;
+}
+
+.nav-list .link,
+.list-contacts .link {
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.contacts-link {
+  fill: currentColor;
+  font-weight: 500;
+  color: inherit;
+  align-items: center;
+}
+.contacts-logo {
+  margin-right: 10px;
+}
+
+.list-contacts {
+  display: flex;
+}
+
+/* === line design in header === */
+.nav-list-item {
+  position: relative;
+}

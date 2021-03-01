@@ -1,0 +1,67 @@
+/* === main hero title === */
+.main-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  color: var(--hero-title-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.button {
+  font-family: inherit;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  background-color: var(--hero-bg-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 600px;
+  max-width: 1600px;
+  background-image: linear-gradient(
+      to right,
+      var(--hero-gradient),
+      var(--hero-gradient)
+    ),
+    url(../images/main-img/main-image.jpg);
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  &-content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 696px;
+  }
+  /* === hero-button design === */
+  &-button {
+    padding: 10px 32px;
+    min-width: 200px;
+    border: 0;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    background-color: var(--accent-color);
+    color: var(--hero-title-color);
+    transition-property: background-color;
+    transition: background-color var(--cubic-variable);
+    &:hover,
+    &:focus {
+      background-color: #188ce8;
+    }
+  }
+}
