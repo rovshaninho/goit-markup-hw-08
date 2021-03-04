@@ -1,5 +1,11 @@
 /* == what are we doing section == */
 .about-us {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.about-us {
   padding-bottom: $padding;
 }
 

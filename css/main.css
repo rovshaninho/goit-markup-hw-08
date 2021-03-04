@@ -569,6 +569,12 @@ a.clients-link:focus {
 }
 
 /* == what are we doing section == */
+@media screen and (max-width: 1199px) {
+  .about-us {
+    display: none;
+  }
+}
+
 .about-us {
   padding-bottom: 94px;
 }
