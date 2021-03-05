@@ -1,4 +1,30 @@
 /* === our regular customers === */
+.clients-icon-box {
+  display: flex;
+  height: 90px;
+}
+
+.clients-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: -15px;
+}
+
+.clients-list-item {
+  width: calc((100% - 4 * 15px) / 2);
+  margin: 15px;
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 6 * 15px) / 3);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 12 * 15px) / 6);
+  }
+}
+
 .clients {
   &-section {
     padding-top: $padding;
@@ -10,16 +36,6 @@
     color: var(--social-icon);
   }
 
-  &-list-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 170px;
-    height: 90px;
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
-  }
   &-link {
     display: flex;
     align-items: center;
