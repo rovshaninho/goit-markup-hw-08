@@ -480,6 +480,8 @@ a.clients-link:focus {
   background-color: var(--accent-color);
 }
 
+/* === overlay effect for team cards
+ in portfolio page === */
 .overlay {
   position: absolute;
   left: 0;
@@ -496,11 +498,6 @@ a.clients-link:focus {
   opacity: 0;
   transform: translateY(100%);
   transition: var(--cubic-variable);
-}
-
-.team-list {
-  /* === overlay effect for team cards
- in portfolio page === */
 }
 
 .team-list-link-wrapper:hover .overlay,
@@ -993,6 +990,9 @@ header > .container {
   .container {
     width: 1200px;
     margin: 0 auto;
+  }
+  .list-contacts a.link {
+    margin: 0;
   }
   .list-contacts {
     flex-direction: row;

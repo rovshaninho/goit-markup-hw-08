@@ -263,6 +263,11 @@ header > .container {
     width: 1200px;
     margin: 0 auto;
   }
+
+  .list-contacts a.link {
+    margin: 0;
+  }
+
   .list-contacts {
     flex-direction: row;
     align-items: center;
