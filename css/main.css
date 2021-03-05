@@ -569,6 +569,10 @@ a.clients-link:focus {
 }
 
 /* == what are we doing section == */
+.about-us {
+  padding-bottom: 94px;
+}
+
 @media screen and (max-width: 1199px) {
   .about-us {
     display: none;
@@ -631,12 +635,54 @@ a.clients-link:focus {
   margin-bottom: 0;
 }
 
+.team-list {
+  list-style: none;
+}
+
+@media screen and (min-width: 768px) {
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: -15px;
+  }
+}
+
+.team-item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background: #ffffff;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .team-item {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-item {
+    width: calc((100% - 8 * 15px) / 4);
+  }
+}
+
 .team-photo {
   display: block;
 }
 
 .team-card {
-  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0 24px 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .team-card {
+    padding: 30px 0;
+  }
 }
 
 .team-name {
@@ -657,18 +703,10 @@ a.clients-link:focus {
   margin-bottom: 16px;
 }
 
-.team-list {
-  display: flex;
-}
-
 .team-list > li {
   background-color: var(--hero-title-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-}
-
-.team-list > li:not(:last-child) {
-  margin-right: 30px;
 }
 
 header {
