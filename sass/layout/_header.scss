@@ -3,11 +3,6 @@ header {
 }
 
 /* === navigation === */
-.site-nav {
-  font-weight: 500;
-  display: flex;
-  align-items: center;
-}
 
 header > .container {
   display: flex;
@@ -241,6 +236,9 @@ header > .container {
   .list-contacts a.link {
     padding: 0px;
     margin-bottom: 10px;
+  }
+  .list-contacts li:last-child a {
+    margin-bottom: 0px;
   }
 
   .nav-block .socials {
