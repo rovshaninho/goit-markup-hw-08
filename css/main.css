@@ -1282,7 +1282,7 @@ header > .container {
   margin: 0 auto;
   height: 400px;
   max-width: 480px;
-  background-image: linear-gradient(to right, var(--hero-gradient), var(--hero-gradient)), url(../../images/main-img/main-image-mobile.jpg);
+  background-image: linear-gradient(to right, var(--hero-gradient), var(--hero-gradient)), url(../images/main-img/main-image-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
