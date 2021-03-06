@@ -135,6 +135,13 @@
         width: 570px;
         padding-top: 72px;
         margin-bottom: 60px;
+        .footer-form {
+          display: flex;
+          .subscribe-email {
+            margin-bottom: 0;
+            margin-right: 12px;
+          }
+        }
       }
     }
   }

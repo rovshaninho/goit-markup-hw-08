@@ -1231,6 +1231,13 @@ header > .container {
     padding-top: 72px;
     margin-bottom: 60px;
   }
+  .footer .container .subscribe-form .footer-form {
+    display: flex;
+  }
+  .footer .container .subscribe-form .footer-form .subscribe-email {
+    margin-bottom: 0;
+    margin-right: 12px;
+  }
 }
 
 /* === main hero title === */
