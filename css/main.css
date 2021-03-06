@@ -136,6 +136,10 @@ a.social-link,
   cursor: pointer;
 }
 
+.modal-close-btn:focus, .modal-close-btn:hover {
+  fill: var(--accent-color);
+}
+
 .modal-form {
   display: flex;
   flex-direction: column;

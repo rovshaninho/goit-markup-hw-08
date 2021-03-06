@@ -32,6 +32,10 @@
     border-radius: 50%;
     fill: var(--title-color);
     cursor: pointer;
+    &:focus,
+    &:hover {
+      fill: var(--accent-color);
+    }
   }
   /* questionnaire form */
   &-form {
