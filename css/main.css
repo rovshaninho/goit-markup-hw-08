@@ -140,6 +140,23 @@ a.social-link,
   fill: var(--accent-color);
 }
 
+@media screen and (max-width: 1199px) {
+  .modal {
+    width: 100%;
+    max-width: 450px;
+    height: 95%;
+    max-height: 609px;
+    overflow: scroll;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
+}
+
 .modal-form {
   display: flex;
   flex-direction: column;
@@ -1089,16 +1106,16 @@ header > .container {
 /* === footer === */
 .footer {
   background-color: var(--footer-bg-color);
+  padding-top: 60px;
   padding-bottom: 60px;
 }
 
 .footer .address-container {
-  padding-top: 60px;
   margin-bottom: 60px;
 }
 
 .footer .address-container a {
-  padding-bottom: 20px;
+  margin-bottom: 20px;
   margin-right: 0px;
 }
 
@@ -1113,12 +1130,12 @@ header > .container {
 
 .footer .address-container .footer-address .footer-main-address {
   color: var(--hero-title-color);
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .footer .address-container .footer-address .list.footer-address-list li a {
   color: var(--address-color);
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .footer .footer-icon-container {
@@ -1193,6 +1210,10 @@ header > .container {
   fill: var(--hero-title-color);
 }
 
+.footer-studio {
+  color: var(--hero-title-color);
+}
+
 @media screen and (min-width: 768px) {
   .footer .container {
     display: flex;
@@ -1204,7 +1225,6 @@ header > .container {
   }
   .footer .container .footer-icon-container {
     width: 50%;
-    padding-top: 65px;
   }
   .footer .container .subscribe-form {
     width: 450px;
@@ -1223,12 +1243,17 @@ header > .container {
   }
   .footer .container .footer-icon-container {
     width: 206px;
-    padding-top: 72px;
     margin-bottom: 60px;
+  }
+  .footer .container .subscribe-text,
+  .footer .container .join-text,
+  .footer .container .logo,
+  .footer .container .footer-contacts-link,
+  .footer .container .footer-main-address {
+    text-align: left;
   }
   .footer .container .subscribe-form {
     width: 570px;
-    padding-top: 72px;
     margin-bottom: 60px;
   }
   .footer .container .subscribe-form .footer-form {
